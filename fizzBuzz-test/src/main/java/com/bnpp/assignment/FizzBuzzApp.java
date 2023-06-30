@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class FizzBuzzApp {
 
+	private static String FIZZ = "fizz";
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);  
@@ -19,7 +20,8 @@ public class FizzBuzzApp {
 	 * @return
 	 */
 	public String readNumber(int num) {	
-		return String.valueOf(num);
+		if(num % 3 == 0) return FIZZ;
+		else return String.valueOf(num);
 	}
 	
 	
