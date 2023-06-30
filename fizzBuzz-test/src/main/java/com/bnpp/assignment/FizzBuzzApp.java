@@ -19,7 +19,7 @@ public class FizzBuzzApp {
 	 * @return
 	 */
 	public String readNumber(int num) {	
-		return "";
+		return String.valueOf(num);
 	}
 	
 	
