@@ -7,6 +7,8 @@ import org.junit.Test;
 public class FizzBuzzAppTest {
 	
 	FizzBuzzApp fizzBuzz;
+
+	private static String FIZZ = "fizz";
 	
 	@Before
 	public void setUp(){
@@ -20,6 +22,12 @@ public class FizzBuzzAppTest {
 		String result = fizzBuzz.readNumber(num);
 		Assert.assertEquals(String.valueOf(num), result);
 	}
-	
+
+	@Test
+	public void testFizz(){
+		int num = 3; //Number only divisible by 3
+		String result = fizzBuzz.readNumber(num);
+		Assert.assertEquals(FIZZ, result);
+	}
 
 }
