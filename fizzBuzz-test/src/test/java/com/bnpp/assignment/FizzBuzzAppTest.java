@@ -16,7 +16,7 @@ public class FizzBuzzAppTest {
 	@Test
 	public void readNumberTest(){
 		//Read a number
-		int num = 1;
+		int num = 11;
 		String result = fizzBuzz.readNumber(num);
 		Assert.assertEquals(String.valueOf(num), result);
 	}
