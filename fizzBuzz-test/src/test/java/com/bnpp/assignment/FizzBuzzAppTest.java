@@ -9,6 +9,7 @@ public class FizzBuzzAppTest {
 	FizzBuzzApp fizzBuzz;
 
 	private static String FIZZ = "fizz";
+	private static String BUZZ = "buzz";
 	
 	@Before
 	public void setUp(){
@@ -28,6 +29,13 @@ public class FizzBuzzAppTest {
 		int num = 3; //Number only divisible by 3
 		String result = fizzBuzz.readNumber(num);
 		Assert.assertEquals(FIZZ, result);
+	}
+
+	@Test
+	public void testBuzz(){
+		int num = 10; //Number only divisible by 5
+		String result = fizzBuzz.readNumber(num);
+		Assert.assertEquals(BUZZ, result);
 	}
 
 }
